@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Steve Terence NLAM KIGOUÉ | Développeur web & mobile, photographe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header id="navbar">
+    <a class="logo" href="#accueil">Steve T.</a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="icon-btn" id="themeBtn" aria-label="Changer de thème">◐</button>
+    <button class="icon-btn hamburger" id="hamburger" aria-label="Ouvrir le menu">☰</button>
+  </header>
+
+  <main>
+    <!-- ACCUEIL -->
+    <section id="accueil" class="hero">
+      <div class="frame">
+        <p class="hello">Élève ingénieur · École Nationale Supérieure Polytechnique de Maroua</p>
+        <h1>NLAM KIGOUÉ<br />Steve Terence</h1>
+        <p class="lead">Je programme des applications web et mobiles, et je photographie ce que je rencontre.</p>
+        <div class="actions">
+          <a href="#projets" class="btn">Voir mes projets</a>
+          <a href="#galerie" class="btn ghost">Voir mes photos</a>
+        </div>
+      </div>
+      <div class="portrait">
+        <span>ST</span>
+        <!-- Mets ta photo dans images/profil.jpg -->
+        <img src="image.jpg" alt="Portrait de Steve Terence" />
+      </div>
+    </section>
+
+    <!-- A PROPOS -->
+    <section id="apropos">
+      <h2>À propos</h2>
+      <p>Je suis élève ingénieur à l'École Nationale Supérieure Polytechnique de Maroua. La programmation, le développement web et mobile et la photographie sont mes trois passions.</p>
+      <p>[Ajoute ici 2 ou 3 phrases : ce qui t'a mené vers le code, ce que tu cherches (stage, collaboration, emploi), ce que tu veux construire.]</p>
+    </section>
+
+    <!-- COMPETENCES -->
+    <section id="competences">
+      <h2>Compétences</h2>
+      <ul class="chips">
+        <li>HTML / CSS</li>
+        <li>JavaScript</li>
+        <li>Développement web</li>
+        <li>Développement mobile</li>
+        <li>Git & GitHub</li>
+        <li>Photographie</li>
+        <!-- Ajoute ou retire des compétences : une ligne <li> chacune -->
+      </ul>
+    </section>
+
+    <!-- PROJETS -->
+    <section id="projets">
+      <h2>Projets</h2>
+      <div class="grid">
+        <article class="card">
+        <!--  <div class="thumb"><span>Capture 1</span><img src="images/projet1.png" alt="" onerror="this.remove()" /></div>
+          <h3>[Titre du projet 1]</h3>
+          <p>[Une phrase : ce que fait le projet et pour qui.]</p>
+          <p class="tags">[Technologies utilisées]</p>
+          <a href="https://github.com/steveterence237" target="_blank" rel="noopener">Voir sur GitHub</a>
+        </article>
+        <article class="card">
+          <div class="thumb"><span>Capture 2</span><img src="images/projet2.png" alt="" onerror="this.remove()" /></div>
+          <h3>[Titre du projet 2]</h3>
+          <p>[Une phrase : ce que fait le projet et pour qui.]</p>
+          <p class="tags">[Technologies utilisées]</p>
+          <a href="https://github.com/steveterence237" target="_blank" rel="noopener">Voir sur GitHub</a> -->
+        </article>
+        <!-- Copie un bloc <article> pour ajouter un projet -->
+      </div>
+      <p class="more"><a href="https://github.com/steveterence237" target="_blank" rel="noopener">Tous mes dépôts sur GitHub</a></p>
+    </section>
+
+    <!-- GALERIE -->
+    <section id="galerie">
+      <h2>Galerie photo</h2>
+      <div class="gallery">
+        <!--<figure class="wide"><span>Photo 1</span><img src="images/photo1.jpg" alt="[Décris la photo 1]" onerror="this.remove()" /></figure>
+        <figure><span>Photo 2</span><img src="images/photo2.jpg" alt="[Décris la photo 2]" onerror="this.remove()" /></figure>
+        <figure><span>Photo 3</span><img src="images/photo3.jpg" alt="[Décris la photo 3]" onerror="this.remove()" /></figure>
+        <figure><span>Photo 4</span><img src="images/photo4.jpg" alt="[Décris la photo 4]" onerror="this.remove()" /></figure>
+        <figure class="wide"><span>Photo 5</span><img src="images/photo5.jpg" alt="[Décris la photo 5]" onerror="this.remove()" /></figure>
+        <figure><span>Photo 6</span><img src="images/photo6.jpg" alt="[Décris la photo 6]" onerror="this.remove()" /></figure>-->
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="contactForm" novalidate>
+        <label>Nom <input type="text" id="name" required /></label>
+        <label>Email <input type="email" id="email" required /></label>
+        <label>Message <textarea id="message" rows="5" required></textarea></label>
+        <button type="submit" class="btn">Envoyer par email</button>
+        <p id="formFeedback" role="status"></p>
+      </form>
+      <p class="links">
+        <a href="mailto:ton.email@exemple.com">nlamsteve1@gmail.com</a>
+        <a href="https://github.com/steveterence237" target="_blank" rel="noopener">GitHub</a>
+        <!-- <a href="https://www.linkedin.com/in/ton-profil" target="_blank" rel="noopener">LinkedIn</a> -->
+      </p>
+    </section>
+  </main>
+
+  <footer>&copy; 2026 NLAM KIGOUÉ Steve Terence</footer>
+  <button id="topBtn" aria-label="Retour en haut">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
